@@ -1,0 +1,1 @@
+export const VERIFYCONTRACTS: string = "verify-contracts";
