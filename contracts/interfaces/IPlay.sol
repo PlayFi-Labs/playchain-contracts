@@ -2,8 +2,9 @@
 
 pragma solidity 0.8.24;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/access/IAccessControl.sol";
 
-interface IPlay is IERC20 {
+interface IPlay is IAccessControl, IERC20 {
 
     error InvalidAddress(address);
     error MintingDenied(address);
